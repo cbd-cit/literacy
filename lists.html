@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>色んなゲームのルール</title>
+    <link rel="stylesheet" href="https://codebydeer.com/common.css">
+</head>
+
+<body>
+    <header><a href="/" id="back" style="display: none;">←</a><a href="/"><img src="https://codebydeer.com/cbd.svg"></a></header>
+    <main>
+        <h2>色んなゲームのルール</h2>
+        <menu>
+            <li><a href="#janken">ジャンケンのるーる</a></li>
+            <li><a href="#osero">割り箸のるーる</a></li>
+            <li><a href="#yubisuma">指スマのるーる</a></li>
+        </menu>
+        <ul>
+            <li id="janken">ジャンケン</li>
+            <ol>
+                <li>２人以上で集まり、「最初はグー、ジャンケン」と言う</li>
+                <li>「ポン」と言いながら、グー、チョキ、パーの手の中のどれかをそれぞれ出す</li>
+                <li>
+                    <dl>
+                        <dt>次のそれぞれの場合において勝敗が異なる。</dt>
+                        <dd>
+                            <dl>
+                                <dt>グー、チョキ、パーの手すべてがその場で出た場合</dt>
+                                <dd>引き分け(あいこ)になる。</dd>
+                                <dt>参加した全員が同じ手を出した場合</dt>
+                                <dd>引き分け(あいこ)になる。</dd>
+                                <dt>グー、チョキの手のみがその場で出た場合</dt>
+                                <dd>グーを出した人が勝ち、チョキを出した人が負けとなる。</dd>
+                                <dt>チョキ、パーの手のみがその場で出た場合</dt>
+                                <dd>チョキを出した人が勝ち、パーを出した人が負けとなる。</dd>
+                                <dt>パー、グーの手のみがその場で出た場合</dt>
+                                <dd>パーを出した人が勝ち、グーを出した人が負けとなる。</dd>
+                            </dl>
+                        </dd>
+                    </dl>
+                </li>
+            </ol>
+            <li id="osero">(省略)</li>
+            <li id="yubisuma">(省略)</li>
+        </ul>
+        <style>
+            :root {
+                --mainSize: 18px;
+            }
+
+            main,
+            main>menu {
+                width: fit-content;
+                margin: 0 auto;
+            }
+
+            main * {
+                text-align: start;
+                line-height: 28px;
+            }
+
+            li {
+                font-size: calc(var(--mainSize) - 0px);
+            }
+
+            ol li {
+                font-size: calc(var(--mainSize) - 1px);
+            }
+
+            dd dt {
+                font-size: calc(var(--mainSize) - 2px);
+            }
+
+            dd dd {
+                font-size: calc(var(--mainSize) - 3px);
+            }
+        </style>
+    </main>
+</body>

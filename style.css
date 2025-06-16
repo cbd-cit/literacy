@@ -1,0 +1,21 @@
+body {
+    background-color: var(--cream);
+    color: var(--brown);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+header {
+    background-color: var(--green);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--brown);
+    opacity: 0.7;
+}
